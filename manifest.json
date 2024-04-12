@@ -1,0 +1,23 @@
+{
+  "author": "igorlogius",
+  "homepage_url": "https://github.com/igorlogius",
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "commands": {
+    "_execute_page_action": {}
+  },
+  "page_action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.svg",
+    "show_matches": ["<all_urls>"]
+  },
+  "icons": {
+    "128": "icon.svg"
+  },
+  "manifest_version": 2,
+  "name": "Access URL Parts",
+  "description": "Access parts of the current URL",
+  "permissions": ["activeTab"],
+  "version": "1.0.0"
+}
