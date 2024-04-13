@@ -1,5 +1,9 @@
 Access parts of the current URL
 
+<b>Short Demo Video</b>
+
+https://github.com/igorlogius/access-url-parts/assets/67047467/b4154109-c158-438e-acfd-2e7df7f2119f
+
 <b>Usage:</b>
 click the page action icon on the right inside the url bar, Note: you can also
 set a addon custom shortcut to open the dropdown and use TAB and SHIFT+TAB to navigate
