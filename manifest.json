@@ -5,7 +5,10 @@
     "scripts": ["background.js"]
   },
   "commands": {
-    "_execute_page_action": {}
+    "_execute_page_action": {},
+    "moveup": {
+      "description": "Go up one directory in the url path hierarchy"
+    }
   },
   "page_action": {
     "default_popup": "popup.html",
@@ -19,5 +22,5 @@
   "name": "Access URL Parts",
   "description": "Access parts of the current URL",
   "permissions": ["activeTab"],
-  "version": "1.0.0"
+  "version": "1.0.1"
 }

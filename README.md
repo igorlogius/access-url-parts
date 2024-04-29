@@ -8,4 +8,5 @@ https://github.com/igorlogius/access-url-parts/assets/67047467/b4154109-c158-438
 click the page action icon on the right inside the url bar, Note: you can also
 set a addon custom shortcut to open the dropdown and use TAB and SHIFT+TAB to navigate
 the parts and use CTRL+ENTER to open a new tab or CTRL+SHIFT+ENTER to open it in
-a new window
+a new window. 
+New: Set a custom shortcut to instantly move up one directory in the url path hierarchy
