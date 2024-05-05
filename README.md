@@ -1,5 +1,7 @@
 Access parts of the current URL
 
+### [Click here to report a bug, make a suggestion or ask a question](https://github.com/igorlogius/igorlogius/issues/new/choose)
+
 <b>Short Demo Video</b>
 
 https://github.com/igorlogius/access-url-parts/assets/67047467/b4154109-c158-438e-acfd-2e7df7f2119f
