@@ -24,14 +24,17 @@ function addPart(text, href) {
 (async function init() {
   try {
     const url = new URL(await browser.runtime.sendMessage("url"));
-    let parts = url.pathname.split("/");
+    let tmp = url.pathname;
+    let parts = tmp.split("/");
+    let joined = "";
     while (parts.length > 0) {
-      if (parts.join("/") !== "" && parts[parts.length - 1] !== "") {
-        addPart(parts[parts.length - 1], url.origin + parts.join("/"));
+      joined = parts.join("/");
+      if (joined !== "" && parts[parts.length - 1] !== "") {
+        addPart("/" + parts[parts.length - 1], url.origin + joined);
       }
       parts.pop();
     }
-    addPart("/", url.origin);
+    addPart(url.origin, url.origin);
   } catch (e) {
     console.error(e.toString());
   }
