@@ -2,7 +2,7 @@
 
 const pc = document.querySelector("#parts-container");
 
-let counter = 1;
+let counter = 0;
 
 function addPart(text, href) {
   const a = document.createElement("a");
@@ -12,7 +12,7 @@ function addPart(text, href) {
   const div = document.createElement("div");
   div.setAttribute("class", "part");
   if (counter < 10) {
-    div.textContent = "(" + counter + ") : " + text;
+    div.textContent = text; // + " |" + counter + "|";
   } else {
     div.textContent = text;
   }
@@ -24,17 +24,19 @@ function addPart(text, href) {
 (async function init() {
   try {
     const url = new URL(await browser.runtime.sendMessage("url"));
-    let tmp = url.pathname;
-    let parts = tmp.split("/");
+    let parts = url.pathname.split("/");
     let joined = "";
+
+    let prepend = url.origin + "/";
+    addPart(url.hostname, url.origin);
+
     while (parts.length > 0) {
-      joined = parts.join("/");
-      if (joined !== "" && parts[parts.length - 1] !== "") {
-        addPart("/" + parts[parts.length - 1], url.origin + joined);
+      if (parts[0] !== "") {
+        prepend = prepend + "/" + parts[0];
+        addPart(parts[0], prepend);
       }
-      parts.pop();
+      parts.shift();
     }
-    addPart(url.origin, url.origin);
   } catch (e) {
     console.error(e.toString());
   }
@@ -42,6 +44,7 @@ function addPart(text, href) {
 
 document.addEventListener("keydown", function (event) {
   switch (event.key) {
+    case "0":
     case "1":
     case "2":
     case "3":
