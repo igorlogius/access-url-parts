@@ -1,14 +1,8 @@
 {
   "author": "igorlogius",
   "homepage_url": "https://github.com/igorlogius",
-  "background": {
-    "scripts": ["background.js"]
-  },
   "commands": {
-    "_execute_page_action": {},
-    "moveup": {
-      "description": "Go up one directory in the url path hierarchy"
-    }
+    "_execute_page_action": {}
   },
   "page_action": {
     "default_popup": "popup.html",
@@ -22,5 +16,5 @@
   "name": "Access URL Parts",
   "description": "Access parts of the current URL",
   "permissions": ["activeTab"],
-  "version": "1.0.3"
+  "version": "1.0.5"
 }
