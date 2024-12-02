@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     let parts = url.pathname.split("/");
     let joined = "";
 
-    let prepend = url.origin + "/";
+    let prepend = url.origin;
     addPart(url.hostname, url.origin);
 
     while (parts.length > 0) {
