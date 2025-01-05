@@ -1,32 +1,47 @@
 <!doctype html>
 <head>
   <style>
-    body {
-      min-width: 150px;
-      padding: 0;
-      margin: 0;
-      background: transparent;
-      font-size: 1.2em;
+        :root {
+          color-scheme: light dark;
+        }
+        body {
+          min-width: 150px;
+          padding: 0;
+          margin: 0;
+          background: transparent;
+          font-size: 1.2em;
+          background-color: light-dark(gainsboro, black);
+        }
+     a:link {
+          text-decoration: none;
     }
-    #parts-container {
-        padding.0;
-        margin:0;
-    }
-    .part {
-      background-color: lightgray;
-      margin: 3px;
-      padding: 5px;
-      border: 1px solid gray;
-      border-radius: 10px;
-      text-align: right;
-    }
-    .part:hover {
-      background-color: silver;
 
+    a:visited {
+          text-decoration: none;
     }
-    a:hover, a:focus {
-      color: red;
+
+    a:hover {
+          text-decoration: none;
     }
+
+    a:active {
+          text-decoration: none;
+    }
+        #parts-container {
+            padding.0;
+            margin:0;
+        }
+        .part {
+          background-color: light-dark(white, gray);
+          margin: 3px;
+          padding: 5px;
+          border: 1px solid gray;
+          border-radius: 10px;
+        }
+        .part:hover {
+          color: light-dark(black,white);
+          background-color: light-dark(gainsboro, black);
+        }
   </style>
 </head>
 <body>

@@ -16,5 +16,5 @@
   "name": "Access URL Parts",
   "description": "Access parts of the current URL",
   "permissions": ["activeTab"],
-  "version": "1.0.6"
+  "version": "1.0.7"
 }
