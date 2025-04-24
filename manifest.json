@@ -1,20 +1,20 @@
 {
   "author": "igorlogius",
-  "homepage_url": "https://github.com/igorlogius",
+  "homepage_url": "https://github.com/igorlogius/access-url-parts",
   "commands": {
     "_execute_page_action": {}
   },
   "page_action": {
     "default_popup": "popup.html",
-    "default_icon": "icon.svg",
+    "default_icon": "icon.png",
     "show_matches": ["<all_urls>"]
   },
   "icons": {
-    "128": "icon.svg"
+    "160": "icon.png"
   },
   "manifest_version": 2,
   "name": "Access URL Parts",
   "description": "Access parts of the current URL",
   "permissions": ["activeTab"],
-  "version": "1.0.8"
+  "version": "1.0.9"
 }
